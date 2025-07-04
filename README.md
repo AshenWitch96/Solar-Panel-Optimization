@@ -1,34 +1,40 @@
-# ⚡ Solar Panel Optimization
+# ⚡ Solar Panel Optimization using LSTM
 
-This project uses a machine learning model to analyze and optimize the performance of solar panels based on various input parameters.
+This project predicts solar panel efficiency using an LSTM (Long Short-Term Memory) neural network. It processes environmental and operational data to build a time-series model for accurate efficiency estimation.
 
-## 📂 Project Files
+## 📄 Files
 
-- `Code.ipynb`: Main Jupyter Notebook containing the entire workflow — including data loading, preprocessing, model training, and evaluation.
-- `README.md`: Project overview and usage instructions.
+- `Code.ipynb`: Complete Jupyter Notebook with preprocessing, LSTM model training, evaluation, and result plots.
+- `README.md`: Project overview.
 
-## 📌 Features
+## 🧰 Libraries Used
 
-- Predicts solar panel efficiency using regression models
-- Analyzes input features such as irradiance, temperature, and panel angle
-- Achieves efficiency score of **89.88%**
+- NumPy, Pandas
+- Matplotlib, Seaborn
+- Scikit-learn (MinMaxScaler, train_test_split, metrics)
+- TensorFlow (Keras Sequential + LSTM)
 
-## 🧠 Tech Stack
+## 🚀 How to Use
 
-- Python
-- Jupyter Notebook
-- Pandas, NumPy, Matplotlib
-- Scikit-learn, LightGBM
+1. Open `Code.ipynb` in Jupyter Notebook or VS Code
+2. Run all cells top to bottom
+3. The model will:
+   - Scale the data
+   - Train the LSTM model with early stopping
+   - Evaluate performance (e.g., RMSE)
+   - Plot predicted vs actual values
 
-## 🚀 How to Run
+> All dependencies are directly imported inside the notebook.
 
-1. Open `Code.ipynb` in Jupyter Notebook
-2. Run the cells in sequence to reproduce results
+## 📈 Model Summary
 
-> 📎 No external datasets required if already embedded in the notebook.
+- Model: LSTM-based Regression
+- Optimizer: Adam
+- Loss Function: Mean Squared Error (MSE)
+- Evaluation Metric: RMSE
+- Result: ~89.88% Efficiency Score
 
 ## 👤 Author
 
 **Vraj Patel**  
 GitHub: [AshenWitch96](https://github.com/AshenWitch96)
-
